@@ -128,7 +128,6 @@ nav ul li a {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -138,7 +137,10 @@ nav ul li a {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  max-height: 200px;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 770px;
 }
 
 /* Contact Section */
@@ -332,5 +334,12 @@ nav ul #contact a{
 }
 
 #cert{
-    max-height: 600px;
+    max-height: 570px;
 }
+
+
+.flexDive{
+      flex: 1 ;
+  text-align: center;
+}
+
