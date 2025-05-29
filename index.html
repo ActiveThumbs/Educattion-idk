@@ -10,18 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
     <div class="container" id="headingA">
       <h1>Bond Technologies and Eduserve Limited</h1>
-      <nav>
+              <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav class="nav-links" id="navLinks">
         <ul>
           <li><a href="#">Home</a></li>
-          <!-- <li><a href="#">About</a></li> -->
           <li><a href="#">Services</a></li>
-          <!-- <li><a href="#">Team</a></li> -->
-          <!-- <li><a href="#">Blog</a></li> -->
           <li id="contact"><a href="#">Contact</a></li>
         </ul>
+
       </nav>
     </div>
   </header>
@@ -111,6 +111,9 @@
           <h3>Bond Technologies and Eduserve Limited</h3>
           <p>Explore our website to learn more about our services, team, and how we can support your educational and research endeavours. Let's work together to shape a brighter future!</p>
           <img id="cert" src="Screenshot (193).png" alt="">
+            <img class="certA" src="WhatsApp Image 2025-05-28 at 19.47.02_eaa28694.jpg" alt="">
+            <img class="certA" src="WhatsApp Image 2025-05-28 at 19.47.01_110fdaf5.jpg" alt="">\
+
         </div>
         <div class="flexDive">
             <img id="cert" src="WhatsApp Image 2025-05-28 at 19.47.02_eaa28694.jpg" alt="">
@@ -131,32 +134,41 @@
     <div class="container">
       <h2>Get in Touch</h2>
       <form>
-        <label for="name">Name *</label>
-        <input type="text" id="name" required />
+        <label for="name">Phone Number :</label>
+        <p>08032708307, 08032714406</p>
 
-        <label for="email">Email *</label>
-        <input type="email" id="email" required />
-
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" />
-
-        <label for="message">Message</label>
-        <textarea id="message" rows="5"></textarea>
-
-        <label>
-          <input type="checkbox" required />
-          I allow this website to store my submission so they can respond to my inquiry.
-        </label>
-
-        <button type="submit">Submit</button>
+        <label for="email">Email :</label>
+        <p>bondtechnologies.eduserve@gmail.com ,     eitl.edu1@gmail.com</p>
       </form>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2025 Bond Technologies and Eduserve Limited</p>
+     
     </div>
+    <div class="service-listA">
+        <div class="serviceA">
+          <h3>ABUJA OFFICE</h3>
+          <p>Plot 72b. Maccido Royal Estate. Galadimanwa, FCT, Abuja</p>
+        </div>
+        <div class="serviceA">
+          <h3>BENIN OFFICE</h3>
+          <p>No. 8, Evborhan Street, Off Ogbelaka Street, Off Sakponba Road, Benin City, Edo State.</p>
+        </div>
+        <div class="serviceA">
+          <h3>EKPOMA OFFICE</h3>
+          <p>Ekompa Motor Building, Ukpenu Road, Ekpoma, Edo State.</p>
+        </div>
+    </div>   
+     <p>© 2025 Bond Technologies and Eduserve Limited</p>
   </footer>
+  
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
 </body>
+
 </html>
