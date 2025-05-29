@@ -138,6 +138,7 @@ nav ul li a {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
+  max-height: 200px;
 }
 
 /* Contact Section */
@@ -269,4 +270,67 @@ nav ul #contact a{
     text-transform: none;
     margin-top: 20px ;
     color: white;
+}
+
+.education-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.text-column {
+  flex: 1 1 500px;
+}
+
+.text-column .tagline {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.text-column h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.text-column p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta-link {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.image-column {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#cert{
+    max-height: 600px;
 }
